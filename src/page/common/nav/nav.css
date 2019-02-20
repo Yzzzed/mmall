@@ -1,0 +1,33 @@
+/*
+ * @Author: Yzed 
+ * @Date: 2019-02-22 21:36:06 
+ * @Last Modified by: Yzed
+ * @Last Modified time: 2019-02-22 21:44:36
+ */
+
+ .nav{
+     background: #eee;
+     height: 30px;
+     line-height: 30px;
+ }
+ .nav .user{
+     float: left;
+ }
+ 
+ /* 中间没有空格 表示同时含有这两个类 */
+ .nav .user.login{
+     display: none;
+ }
+ .nav .user .link{
+     margin-right: 5px;
+ }
+
+/* 导航链接部分 */
+
+ .nav .nav-list{
+     float: right;
+ }
+ .nav .nav-list .nav-item{
+     display: inline-block;
+     margin-left: 5px;
+ }

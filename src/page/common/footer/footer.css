@@ -1,0 +1,23 @@
+/*
+ * @Author: Yzed 
+ * @Date: 2019-02-23 20:26:37 
+ * @Last Modified by: Yzed
+ * @Last Modified time: 2019-02-23 20:32:50
+ */
+
+ .footer{
+     padding-bottom: 10px;
+ }
+ .footer .links{
+     text-align: center;
+     color: #666;
+     line-height: 30px;
+ }
+ .footer .links .link{
+     padding: 0 10px;
+ }
+ .footer .copyright{
+     text-align: center;
+     color: #666;
+     line-height: 30px;
+ }
