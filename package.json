@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "separation",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "hogan": "^1.0.2"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
@@ -24,7 +27,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/.bin/webpack-dev-server --inline --colors --open chrome",
-    "dist": "set WEBPACK_ENV=online&& ./node_modules/.bin/webpack -p"
+    "dist": "set WEBPACK_ENV=online&& ./node_modules/.bin/webpack -p",
+    "build": "./node_modules/.bin/webpack -d"
   },
   "repository": {
     "type": "git",

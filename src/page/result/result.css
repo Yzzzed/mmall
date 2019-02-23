@@ -1,0 +1,26 @@
+/*
+ * @Author: Yzed 
+ * @Date: 2019-02-24 00:17:21 
+ * @Last Modified by: Yzed
+ * @Last Modified time: 2019-02-24 00:27:17
+ */
+
+ .page-wrap{
+     padding: 30px 0;
+     margin-top: 20px;
+     text-align: center;
+      background: #fff;
+ }.result-con{
+     display: none;
+ }
+ .result-con .result-title{
+     color: #777;
+ }
+ .result-con .result-content{
+     margin-top: 20px;
+ }
+ .result-con .result-content .link{
+     margin: 0 5px;
+     padding: 5px 10px;
+     border: 1px solid #ccc;
+ }

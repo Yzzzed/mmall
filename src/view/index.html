@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="UTF-8">
+        <%= require('html-loader!./layout/head-common.html') %>
+
+        <title><%= htmlWebpackPlugin.options.title %> - mmall</title>
+        <script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     </head>
 <body>
-hellooooo
-
-
+    <%= require('html-loader!./layout/nav.html') %>
+    <%= require('html-loader!./layout/header.html') %>
+    <div class="page-wrap w">
+            <%= require('html-loader!./layout/nav-side.html') %>
+            <div class="content with-nav"></div>
+    </div>
+    <%= require('html-loader!./layout/footer.html') %>
 </body>
 </html>
