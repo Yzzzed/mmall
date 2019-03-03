@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-02-24 00:15:08 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-02-24 20:27:54
+ * @Last Modified time: 2019-03-03 12:00:00
  */
 
 import './result.css'
