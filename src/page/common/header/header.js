@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-02-23 21:22:33 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-02-23 21:54:53
+ * @Last Modified time: 2019-03-07 20:54:20
  */
 
  import './header.css'
@@ -11,8 +11,8 @@
  //通用页面头部
  let header = {
     init: function(){
+        this.onLoad()
         this.bindEvent()
-        return this     //this指向它的调用者
     },
     //跳转到list页面时 keyword存在则搜索内容回填
     onLoad: function(){

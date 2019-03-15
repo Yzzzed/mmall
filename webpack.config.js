@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-02-17 14:38:40 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-03-03 09:51:39
+ * @Last Modified time: 2019-03-17 09:21:29
  */
 
 const path = require('path')
@@ -32,6 +32,9 @@ const config = {
     entry: {
         'common'            : './src/page/common/common',
         'index'             : './src/page/index/index',
+        'list'             : './src/page/list/list',
+        'detail'             : './src/page/detail/detail',
+        'cart'             : './src/page/cart/cart',
         'user-login'        : './src/page/user-login/user-login',
         'user-register'     : './src/page/user-register/user-register',
         'user-pass-reset'   : './src/page/user-pass-reset/user-pass-reset',
@@ -106,7 +109,7 @@ const config = {
                         loader: 'url-loader',
                         options: {
                             /* 
-                            * 【改动】：图片小于2kb的按base64打包
+                            *  图片小于2kb的按base64打包
                             */
                             limit: 2048,
                             name: 'resource/[name].[ext]'
@@ -170,6 +173,15 @@ const config = {
         //html模板的处理
         new HtmlWebpackPlugin(
             getHtmlConfig('index', '首页')
+        ),
+        new HtmlWebpackPlugin(
+            getHtmlConfig('list', '商品列表页') 
+        ),
+        new HtmlWebpackPlugin(
+            getHtmlConfig('detail', '商品详情页') 
+        ),
+        new HtmlWebpackPlugin(
+            getHtmlConfig('cart', '购物车') 
         ),
         new HtmlWebpackPlugin(
             getHtmlConfig('user-login', '用户登录')

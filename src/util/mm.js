@@ -105,7 +105,9 @@ const _mm = {
         //encodeURLComponment 防止链接中有些特殊字符导致链接解析错误 加uri编码更安全
         window.location.href = `./user-login.html?redirect=${encodeURIComponent(window.location.href)}`
 
-    },goHome: function(){
+    },
+    //返回首页
+    goHome: function(){
         window.location.href = './index.html'
     }
 }
