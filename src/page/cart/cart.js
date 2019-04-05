@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-03-17 09:23:52 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-03-18 08:34:28
+ * @Last Modified time: 2019-03-31 16:26:59
  */
 
 import './cart.css'
@@ -129,7 +129,7 @@ let page = {
         $(document).on('click','.btn-submit', function(){
             //判断总价大于0 进行提交
             if(_this.data.cartInfo && _this.data.cartInfo.cartTotalPrice > 0){
-                window.location.href = './confirm.html'
+                window.location.href = './order-confirm.html'
             }else{
                 _mm.errorTips('请选择商品后再提交')
             }

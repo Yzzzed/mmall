@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-02-17 14:38:40 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-03-18 08:42:09
+ * @Last Modified time: 2019-04-05 20:04:43
  */
 
 const path = require('path')
@@ -32,9 +32,12 @@ const config = {
     entry: {
         'common'            : './src/page/common/common',
         'index'             : './src/page/index/index',
-        'list'             : './src/page/list/list',
-        'detail'             : './src/page/detail/detail',
-        'cart'             : './src/page/cart/cart',
+        'list'              : './src/page/list/list',
+        'detail'            : './src/page/detail/detail',
+        'cart'              : './src/page/cart/cart',
+        'order-confirm'     : './src/page/order-confirm/order-confirm',
+        'order-list'        : './src/page/order-list/order-list',
+        'order-detail'        : './src/page/order-detail/order-detail',
         'user-login'        : './src/page/user-login/user-login',
         'user-register'     : './src/page/user-register/user-register',
         'user-pass-reset'   : './src/page/user-pass-reset/user-pass-reset',
@@ -175,13 +178,22 @@ const config = {
             getHtmlConfig('index', '首页')
         ),
         new HtmlWebpackPlugin(
-            getHtmlConfig('list', '商品列表页') 
+            getHtmlConfig('list', '商品列表') 
         ),
         new HtmlWebpackPlugin(
-            getHtmlConfig('detail', '商品详情页') 
+            getHtmlConfig('detail', '商品详情') 
         ),
         new HtmlWebpackPlugin(
             getHtmlConfig('cart', '购物车') 
+        ),
+        new HtmlWebpackPlugin(
+            getHtmlConfig('order-confirm', '订单确认') 
+        ),
+        new HtmlWebpackPlugin(
+            getHtmlConfig('order-list', '订单列表') 
+        ),
+        new HtmlWebpackPlugin(
+            getHtmlConfig('order-detail', '订单详情') 
         ),
         new HtmlWebpackPlugin(
             getHtmlConfig('user-login', '用户登录')
