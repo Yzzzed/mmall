@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-02-17 14:38:40 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-04-05 20:04:43
+ * @Last Modified time: 2019-04-06 07:35:55
  */
 
 const path = require('path')
@@ -38,6 +38,7 @@ const config = {
         'order-confirm'     : './src/page/order-confirm/order-confirm',
         'order-list'        : './src/page/order-list/order-list',
         'order-detail'        : './src/page/order-detail/order-detail',
+        'payment'           : './src/page/payment/payment',
         'user-login'        : './src/page/user-login/user-login',
         'user-register'     : './src/page/user-register/user-register',
         'user-pass-reset'   : './src/page/user-pass-reset/user-pass-reset',
@@ -194,6 +195,9 @@ const config = {
         ),
         new HtmlWebpackPlugin(
             getHtmlConfig('order-detail', '订单详情') 
+        ),
+        new HtmlWebpackPlugin(
+            getHtmlConfig('payment', '订单支付') 
         ),
         new HtmlWebpackPlugin(
             getHtmlConfig('user-login', '用户登录')

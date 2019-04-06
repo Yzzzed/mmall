@@ -53,7 +53,7 @@ const page = {
             orderDetailHtml = _mm.renderHtml(templateIndex, res)
             $content.html(orderDetailHtml)
         }, errMsg => {
-            $content.html(`<div class="err-tip">${errMsg}</div>`)
+            $content.html(`<p class="err-tip">${errMsg}</p>`)
         })    
     },
     dataFilter: function(data){
