@@ -27,8 +27,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "./node_modules/.bin/webpack-dev-server --inline --colors --open chrome",
-    "dist": "set WEBPACK_ENV=online&& ./node_modules/.bin/webpack -p",
-    "build": "./node_modules/.bin/webpack -d"
+    "dist": "set WEBPACK_ENV=online&& webpack -p",
+    "build": "webpack -d"
   },
   "repository": {
     "type": "git",

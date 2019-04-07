@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-02-17 14:38:40 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-04-06 07:35:55
+ * @Last Modified time: 2019-04-07 10:06:03
  */
 
 const path = require('path')
@@ -19,6 +19,7 @@ let getHtmlConfig = function(name,title){
     return {
         template: `./src/view/${name}.html`,
         filename: `view/${name}.html`,
+        favicon: './favicon.ico',
         title: title,
         inject: true,
         hash: true,
@@ -45,10 +46,11 @@ const config = {
         'user-center'       : './src/page/user-center/user-center',
         'user-center-update': './src/page/user-center-update/user-center-update',
         'user-pass-update'  : './src/page/user-pass-update/user-pass-update',
-        'result'            : './src/page/result/result'
+        'result'            : './src/page/result/result',
+        'about'            : './src/page/about/about'
     },
     output: {
-        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mmall-fe/dist/',
+        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mmall/dist/',
         filename: 'js/[name].bundle.js',
         chunkFilename: 'js/[name].chunk.js'
     },
@@ -220,7 +222,9 @@ const config = {
         new HtmlWebpackPlugin(
             getHtmlConfig('result', '操作结果')
         ),
-
+        new HtmlWebpackPlugin(
+            getHtmlConfig('about', '关于我们')
+        )
     ]
 }
 
