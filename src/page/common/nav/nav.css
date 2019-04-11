@@ -6,28 +6,28 @@
  */
 
  .nav{
-     background: #eee;
-     height: 30px;
-     line-height: 30px;
+    background: #eee;
+    height: 30px;
+    line-height: 30px;
  }
  .nav .user{
-     float: left;
+    float: left;
  }
  
  /* 中间没有空格 表示同时含有这两个类 */
  .nav .user.login{
-     display: none;
+    display: none;
  }
  .nav .user .link{
-     margin-right: 5px;
+    margin-right: 5px;
  }
 
 /* 导航链接部分 */
 
  .nav .nav-list{
-     float: right;
+    float: right;
  }
  .nav .nav-list .nav-item{
-     display: inline-block;
-     margin-left: 5px;
+    display: inline-block;
+    margin-left: 5px;
  }

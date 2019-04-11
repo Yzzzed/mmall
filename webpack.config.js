@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-02-17 14:38:40 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-04-07 10:06:03
+ * @Last Modified time: 2019-04-11 16:17:09
  */
 
 const path = require('path')
@@ -50,7 +50,7 @@ const config = {
         'about'            : './src/page/about/about'
     },
     output: {
-        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '//s.happymmall.com/mmall/dist/',
+        publicPath  : 'dev' === WEBPACK_ENV ? '/dist/' : '/dist/',
         filename: 'js/[name].bundle.js',
         chunkFilename: 'js/[name].chunk.js'
     },

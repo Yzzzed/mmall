@@ -2,7 +2,7 @@
  * @Author: Yzed 
  * @Date: 2019-02-21 23:28:12 
  * @Last Modified by: Yzed
- * @Last Modified time: 2019-03-02 17:01:29
+ * @Last Modified time: 2019-04-08 20:38:22
  */
 
  
@@ -38,10 +38,10 @@
  /* 定宽布局 */
  
  .w{
-     width: 1080px;
-     margin: 0 auto;
-     position: relative;
-     overflow: hidden;
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
  }
  .large.w{
      width: 1600px;
