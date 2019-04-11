@@ -2,7 +2,7 @@
 
 separation test
 
-### v1.0 finished
+### v1.0 finished (2019.4.11)
 -------------------------------------
 * Visit http://101.132.64.204 and you can experience this program.
 * I decide to rebuild view in v2.0 .
